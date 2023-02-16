@@ -1711,7 +1711,7 @@ module.exports = {
 
 },{}],"/node_modules/jshint/lodash.js":[function(_dereq_,module,exports){
 (function (global){
-;(function() {
+(function() {
 
   var undefined;
 

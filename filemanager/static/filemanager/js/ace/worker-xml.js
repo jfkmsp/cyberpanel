@@ -1892,7 +1892,7 @@ function _set_proto_(thiz,parent){
 }
 if(!(_set_proto_({},_set_proto_.prototype) instanceof _set_proto_)){
 	_set_proto_ = function(thiz,parent){
-		function p(){};
+		function p(){}
 		p.prototype = parent;
 		p = new p();
 		for(parent in thiz){
@@ -1931,7 +1931,7 @@ function _extends(Class,Super){
 		pt.__proto__ = ppt;
 	}
 	if(!(pt instanceof Super)){
-		function t(){};
+		function t(){}
 		t.prototype = Super.prototype;
 		t = new t();
 		copy(pt,t);
@@ -1989,11 +1989,11 @@ function DOMException(code, message) {
 	error.code = code;
 	if(message) this.message = this.message + ": " + message;
 	return error;
-};
+}
 DOMException.prototype = Error.prototype;
 copy(ExceptionCode,DOMException)
 function NodeList() {
-};
+}
 NodeList.prototype = {
 	length:0, 
 	item: function(index) {
@@ -2021,7 +2021,7 @@ LiveNodeList.prototype.item = function(i){
 
 _extends(LiveNodeList,NodeList);
 function NamedNodeMap() {
-};
+}
 
 function _findNodeIndex(list,node){
 	var i = list.length;
@@ -2124,7 +2124,7 @@ function DOMImplementation(/* Object */ features) {
 			 this._features = features[feature];
 		}
 	}
-};
+}
 
 DOMImplementation.prototype = {
 	hasFeature: function(/* string */ feature, /* string */ version) {
@@ -2160,7 +2160,7 @@ DOMImplementation.prototype = {
 };
 
 function Node() {
-};
+}
 
 Node.prototype = {
 	firstChild : null,
@@ -2522,7 +2522,7 @@ _extends(Document,Node);
 
 function Element() {
 	this._nsMap = {};
-};
+}
 Element.prototype = {
 	nodeType : ELEMENT_NODE,
 	hasAttribute : function(name){
@@ -2610,13 +2610,13 @@ Document.prototype.getElementsByTagNameNS = Element.prototype.getElementsByTagNa
 
 _extends(Element,Node);
 function Attr() {
-};
+}
 Attr.prototype.nodeType = ATTRIBUTE_NODE;
 _extends(Attr,Node);
 
 
 function CharacterData() {
-};
+}
 CharacterData.prototype = {
 	data : '',
 	substringData : function(offset, count) {
@@ -2648,7 +2648,7 @@ CharacterData.prototype = {
 }
 _extends(CharacterData,Node);
 function Text() {
-};
+}
 Text.prototype = {
 	nodeName : "#text",
 	nodeType : TEXT_NODE,
@@ -2667,7 +2667,7 @@ Text.prototype = {
 }
 _extends(Text,CharacterData);
 function Comment() {
-};
+}
 Comment.prototype = {
 	nodeName : "#comment",
 	nodeType : COMMENT_NODE
@@ -2675,7 +2675,7 @@ Comment.prototype = {
 _extends(Comment,CharacterData);
 
 function CDATASection() {
-};
+}
 CDATASection.prototype = {
 	nodeName : "#cdata-section",
 	nodeType : CDATA_SECTION_NODE
@@ -2684,27 +2684,27 @@ _extends(CDATASection,CharacterData);
 
 
 function DocumentType() {
-};
+}
 DocumentType.prototype.nodeType = DOCUMENT_TYPE_NODE;
 _extends(DocumentType,Node);
 
 function Notation() {
-};
+}
 Notation.prototype.nodeType = NOTATION_NODE;
 _extends(Notation,Node);
 
 function Entity() {
-};
+}
 Entity.prototype.nodeType = ENTITY_NODE;
 _extends(Entity,Node);
 
 function EntityReference() {
-};
+}
 EntityReference.prototype.nodeType = ENTITY_REFERENCE_NODE;
 _extends(EntityReference,Node);
 
 function DocumentFragment() {
-};
+}
 DocumentFragment.prototype.nodeName =	"#document-fragment";
 DocumentFragment.prototype.nodeType =	DOCUMENT_FRAGMENT_NODE;
 _extends(DocumentFragment,Node);
@@ -2845,7 +2845,7 @@ function cloneNode(doc,node,deep){
 		for(var i=0;i<len;i++){
 			node2.setAttributeNode(cloneNode(doc,attrs.item(i),true));
 		}
-		break;;
+		break;
 	case ATTRIBUTE_NODE:
 		deep = true;
 	}

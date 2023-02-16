@@ -1,5 +1,5 @@
 
-;(function(){
+(function(){
 
     /**
      * Require the module at `name`.
@@ -71,7 +71,7 @@
 
         function Emitter(obj) {
             if (obj) return mixin(obj);
-        };
+        }
 
         /**
          * Mixin the emitter properties.

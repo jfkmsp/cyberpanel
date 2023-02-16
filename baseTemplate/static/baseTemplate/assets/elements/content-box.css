@@ -177,7 +177,7 @@
 body .button-pane {
     padding: 10px;
     text-align: center;
-    border-width: 1px 0 0 0;
+    border-width: 1px 0 0;
     border-style: solid;
     border-top-left-radius: 0;
     border-top-right-radius: 0;

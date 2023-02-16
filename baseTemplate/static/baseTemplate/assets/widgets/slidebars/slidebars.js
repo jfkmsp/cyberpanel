@@ -21,7 +21,7 @@
 // 007 - API
 // 008 - User Input
 
-;(function($) {
+(function($) {
 
     $.slidebars = function(options) {
 

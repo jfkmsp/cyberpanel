@@ -166,194 +166,194 @@ app.controller('adminController', function ($scope, $http, $timeout) {
             $('.serverACL').hide();
 
 
-            if (!Boolean(response.data.versionManagement)) {
+            if (!response.data.versionManagement) {
                 $('.versionManagement').hide();
             }
             // User Management
-            if (!Boolean(response.data.createNewUser)) {
+            if (!response.data.createNewUser) {
                 $('.createNewUser').hide();
             }
-            if (!Boolean(response.data.listUsers)) {
+            if (!response.data.listUsers) {
                 $('.listUsers').hide();
             }
-            if (!Boolean(response.data.resellerCenter)) {
+            if (!response.data.resellerCenter) {
                 $('.resellerCenter').hide();
             }
-            if (!Boolean(response.data.deleteUser)) {
+            if (!response.data.deleteUser) {
                 $('.deleteUser').hide();
             }
-            if (!Boolean(response.data.changeUserACL)) {
+            if (!response.data.changeUserACL) {
                 $('.changeUserACL').hide();
             }
             // Website Management
-            if (!Boolean(response.data.createWebsite)) {
+            if (!response.data.createWebsite) {
                 $('.createWebsite').hide();
             }
 
-            if (!Boolean(response.data.modifyWebsite)) {
+            if (!response.data.modifyWebsite) {
                 $('.modifyWebsite').hide();
             }
 
-            if (!Boolean(response.data.suspendWebsite)) {
+            if (!response.data.suspendWebsite) {
                 $('.suspendWebsite').hide();
             }
 
-            if (!Boolean(response.data.deleteWebsite)) {
+            if (!response.data.deleteWebsite) {
                 $('.deleteWebsite').hide();
             }
 
             // Package Management
 
-            if (!Boolean(response.data.createPackage)) {
+            if (!response.data.createPackage) {
                 $('.createPackage').hide();
             }
 
-            if (!Boolean(response.data.listPackages)) {
+            if (!response.data.listPackages) {
                 $('.listPackages').hide();
             }
 
-            if (!Boolean(response.data.deletePackage)) {
+            if (!response.data.deletePackage) {
                 $('.deletePackage').hide();
             }
 
-            if (!Boolean(response.data.modifyPackage)) {
+            if (!response.data.modifyPackage) {
                 $('.modifyPackage').hide();
             }
 
             // Database Management
 
-            if (!Boolean(response.data.createDatabase)) {
+            if (!response.data.createDatabase) {
                 $('.createDatabase').hide();
             }
 
-            if (!Boolean(response.data.deleteDatabase)) {
+            if (!response.data.deleteDatabase) {
                 $('.deleteDatabase').hide();
             }
 
-            if (!Boolean(response.data.listDatabases)) {
+            if (!response.data.listDatabases) {
                 $('.listDatabases').hide();
             }
 
             // DNS Management
 
-            if (!Boolean(response.data.dnsAsWhole)) {
+            if (!response.data.dnsAsWhole) {
                 $('.dnsAsWhole').hide();
             }
 
-            if (!Boolean(response.data.createNameServer)) {
+            if (!response.data.createNameServer) {
                 $('.createNameServer').hide();
             }
 
-            if (!Boolean(response.data.createDNSZone)) {
+            if (!response.data.createDNSZone) {
                 $('.createDNSZone').hide();
             }
 
-            if (!Boolean(response.data.deleteZone)) {
+            if (!response.data.deleteZone) {
                 $('.addDeleteRecords').hide();
             }
 
-            if (!Boolean(response.data.addDeleteRecords)) {
+            if (!response.data.addDeleteRecords) {
                 $('.deleteDatabase').hide();
             }
 
             // Email Management
 
-            if (!Boolean(response.data.emailAsWhole)) {
+            if (!response.data.emailAsWhole) {
                 $('.emailAsWhole').hide();
             }
 
-            if (!Boolean(response.data.listEmails)) {
+            if (!response.data.listEmails) {
                 $('.listEmails').hide();
             }
 
-            if (!Boolean(response.data.createEmail)) {
+            if (!response.data.createEmail) {
                 $('.createEmail').hide();
             }
 
-            if (!Boolean(response.data.deleteEmail)) {
+            if (!response.data.deleteEmail) {
                 $('.deleteEmail').hide();
             }
 
-            if (!Boolean(response.data.emailForwarding)) {
+            if (!response.data.emailForwarding) {
                 $('.emailForwarding').hide();
             }
 
-            if (!Boolean(response.data.changeEmailPassword)) {
+            if (!response.data.changeEmailPassword) {
                 $('.changeEmailPassword').hide();
             }
 
-            if (!Boolean(response.data.dkimManager)) {
+            if (!response.data.dkimManager) {
                 $('.dkimManager').hide();
             }
 
 
             // FTP Management
 
-            if (!Boolean(response.data.ftpAsWhole)) {
+            if (!response.data.ftpAsWhole) {
                 $('.ftpAsWhole').hide();
             }
 
-            if (!Boolean(response.data.createFTPAccount)) {
+            if (!response.data.createFTPAccount) {
                 $('.createFTPAccount').hide();
             }
 
-            if (!Boolean(response.data.deleteFTPAccount)) {
+            if (!response.data.deleteFTPAccount) {
                 $('.deleteFTPAccount').hide();
             }
 
-            if (!Boolean(response.data.listFTPAccounts)) {
+            if (!response.data.listFTPAccounts) {
                 $('.listFTPAccounts').hide();
             }
 
             // Backup Management
 
-            if (!Boolean(response.data.createBackup)) {
+            if (!response.data.createBackup) {
                 $('.createBackup').hide();
             }
 
-            if (!Boolean(response.data.restoreBackup)) {
+            if (!response.data.restoreBackup) {
                 $('.restoreBackup').hide();
             }
 
-            if (!Boolean(response.data.addDeleteDestinations)) {
+            if (!response.data.addDeleteDestinations) {
                 $('.addDeleteDestinations').hide();
             }
 
-            if (!Boolean(response.data.scheduleBackups)) {
+            if (!response.data.scheduleBackups) {
                 $('.scheduleBackups').hide();
             }
 
-            if (!Boolean(response.data.remoteBackups)) {
+            if (!response.data.remoteBackups) {
                 $('.remoteBackups').hide();
             }
 
 
             // SSL Management
 
-            if (!Boolean(response.data.manageSSL)) {
+            if (!response.data.manageSSL) {
                 $('.manageSSL').hide();
             }
 
-            if (!Boolean(response.data.hostnameSSL)) {
+            if (!response.data.hostnameSSL) {
                 $('.hostnameSSL').hide();
             }
 
-            if (!Boolean(response.data.mailServerSSL)) {
+            if (!response.data.mailServerSSL) {
                 $('.mailServerSSL').hide();
             }
 
 
         } else {
 
-            if (!Boolean(response.data.emailAsWhole)) {
+            if (!response.data.emailAsWhole) {
                 $('.emailAsWhole').hide();
             }
 
-            if (!Boolean(response.data.ftpAsWhole)) {
+            if (!response.data.ftpAsWhole) {
                 $('.ftpAsWhole').hide();
             }
 
-            if (!Boolean(response.data.dnsAsWhole)) {
+            if (!response.data.dnsAsWhole) {
                 $('.dnsAsWhole').hide();
             }
         }
@@ -468,7 +468,7 @@ app.controller('homePageStatus', function ($scope, $http, $timeout) {
                         });
                     } else if (classList[i].match("^p" + $scope.ramUsage)) {
                         var rotationPercentage = response.data.ramUsage;
-                        ;
+                        
                         var rotationDegrees = rotationMultiplier * rotationPercentage;
                         $('.c100.p' + rotationPercentage + ' .bar').css({
                             '-webkit-transform': 'rotate(' + rotationDegrees + 'deg)',
@@ -479,7 +479,7 @@ app.controller('homePageStatus', function ($scope, $http, $timeout) {
                         });
                     } else if (classList[i].match("^p" + $scope.diskUsage)) {
                         var rotationPercentage = response.data.diskUsage;
-                        ;
+                        
                         var rotationDegrees = rotationMultiplier * rotationPercentage;
                         $('.c100.p' + rotationPercentage + ' .bar').css({
                             '-webkit-transform': 'rotate(' + rotationDegrees + 'deg)',
@@ -653,7 +653,7 @@ app.controller('versionManagment', function ($scope, $http, $timeout) {
         }
 
 
-    };
+    }
 
 });
 

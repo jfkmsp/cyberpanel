@@ -13,7 +13,7 @@
     border-radius: .25em;
 }
 
-.content-box .bs-label { padding:.3em .6em .3em; }
+.content-box .bs-label { padding:.3em .6em; }
 
 .bs-label[href]:hover,
 .bs-label[href]:focus {

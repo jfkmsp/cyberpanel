@@ -1920,7 +1920,7 @@
                     this.formatBlock($editable, 'H' + idx);
                 };
             }(idx);
-        };
+        }
         /* jshint ignore:end */
 
         /**
@@ -2200,7 +2200,7 @@
             var $fontname = $container.find('.note-fontname');
             if ($fontname.length) {
                 var selectedFont = oStyle['font-family'];
-                if (!!selectedFont) {
+                if (selectedFont) {
                     selectedFont = list.head(selectedFont.split(','));
                     selectedFont = selectedFont.replace(/\'/g, '');
                     $fontname.find('.note-current-fontname').text(selectedFont);
@@ -4242,7 +4242,7 @@
                 var $holder = this.first();
                 if (!$holder.length) { return; }
                 var info = renderer.layoutInfoFromHolder($holder);
-                if (!!(info && info.editable)) {
+                if (info && info.editable) {
                     var isCodeview = info.editor.hasClass('codeview');
                     if (isCodeview && agent.hasCodeMirror) {
                         info.codable.data('cmEditor').save();

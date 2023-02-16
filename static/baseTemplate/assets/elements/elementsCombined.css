@@ -13,7 +13,7 @@
     border-radius: .25em;
 }
 
-.content-box .bs-label { padding:.3em .6em .3em; }
+.content-box .bs-label { padding:.3em .6em; }
 
 .bs-label[href]:hover,
 .bs-label[href]:focus {
@@ -822,7 +822,7 @@ input[type='button'].btn-block {
 body .button-pane {
     padding: 10px;
     text-align: center;
-    border-width: 1px 0 0 0;
+    border-width: 1px 0 0;
     border-style: solid;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -3138,7 +3138,6 @@ a.dashboard-box .button-pane .heading {
   /* Bordered */
   
   .table-bordered {
-      border-width: 1px;
       border-style: solid;
       border-width: 1px 0 1px 1px;
   }
@@ -3148,7 +3147,6 @@ a.dashboard-box .button-pane .heading {
   .table-bordered > thead > tr > td,
   .table-bordered > tbody > tr > td,
   .table-bordered > tfoot > tr > td {
-      border-width: 1px;
       border-style: solid;
       border-width: 1px 1px 0 0;
   }

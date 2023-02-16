@@ -1,5 +1,5 @@
 function WSSHClient() {
-};
+}
 
 WSSHClient.prototype._generateEndpoint = function () {
     var protocol = 'wss://';

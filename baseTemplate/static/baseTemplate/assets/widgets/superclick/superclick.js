@@ -7,7 +7,7 @@
  * 	http://www.gnu.org/licenses/gpl.html
  */
 
-;(function($) {
+(function($) {
 
 	var methods = (function(){
 		// private properties and methods go here

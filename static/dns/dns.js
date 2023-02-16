@@ -405,7 +405,7 @@ app.controller('addModifyDNSRecords', function ($scope, $http) {
 
             }
 
-        };
+        }
 
         var globalID = null;
         var nameNow = null;

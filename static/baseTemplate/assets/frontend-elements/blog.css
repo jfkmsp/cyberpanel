@@ -70,7 +70,7 @@
     display: block;
 }
 .blog-box.panel .post-meta {
-    padding: 15px 15px;
+    padding: 15px;
 }
 .blog-box.panel .post-content {
     padding: 0 15px 15px;
@@ -197,7 +197,7 @@
 }
 .blog-comments .comments-list .comment-header .btn-xs {
     float: right;
-    margin: 0 0 0;
+    margin: 0;
 }
 .blog-comments .comments-list .comment-image img {
     width: 60px;

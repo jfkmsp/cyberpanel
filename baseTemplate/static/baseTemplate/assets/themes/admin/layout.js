@@ -69,7 +69,7 @@ function body_sizer() {
 
     }
 
-};
+}
 
 function pageTransitions() {
 
@@ -87,7 +87,7 @@ function pageTransitions() {
         }
     }
 
-};
+}
 
 $(document).ready(function() {
 

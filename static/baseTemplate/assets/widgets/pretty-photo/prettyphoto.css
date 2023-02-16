@@ -129,7 +129,7 @@ div.pp_default a.pp_arrow_previous,
 div.pp_default a.pp_arrow_next {
     width: 20px;
     height: 20px;
-    margin: 4px 0 0 0;
+    margin: 4px 0 0;
     background: url(images/default/sprite.png) -31px -3px no-repeat;
 }
 div.pp_default a.pp_arrow_next {
@@ -267,7 +267,7 @@ div.pp_pic_holder {
 }
 .pp_content_container .pp_details {
     float: left;
-    margin: 10px 0 2px 0;
+    margin: 10px 0 2px;
 }
 .pp_description {
     display: none;
@@ -439,7 +439,7 @@ a.pp_close {
     text-align: left;
 }
 #pp_full_res .pp_inline p {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px;
 }
 div.ppt {
     font-size: 17px;

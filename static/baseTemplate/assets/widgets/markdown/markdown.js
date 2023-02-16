@@ -1097,7 +1097,7 @@ else
                         function (wholeMatch, m1) {
                             var pre = m1;
                             // attacklab: hack around Konqueror 3.5.4 bug:
-                            pre = pre.replace(/^  /mg, "~0");
+                            pre = pre.replace(/^ {2}/mg, "~0");
                             pre = pre.replace(/~0/g, "");
                             return pre;
                         });
@@ -1595,7 +1595,7 @@ else
         this.buttonBar = doc.getElementById("wmd-button-bar" + postfix);
         this.preview = doc.getElementById("wmd-preview" + postfix);
         this.input = doc.getElementById("wmd-input" + postfix);
-    };
+    }
 
     // Returns true if the DOM element is visible, false if it's hidden.
     // Checks if display is anything other than none.
@@ -2112,7 +2112,7 @@ else
             this.scrollTop = chunk.scrollTop;
         };
         this.init();
-    };
+    }
 
     function PreviewManager(converter, panels, previewRefreshCallback) {
 
@@ -2307,7 +2307,7 @@ else
         };
 
         init();
-    };
+    }
 
 
     // This simulates a modal dialog box and asks for the URL when you
@@ -2650,7 +2650,7 @@ else
             if (button.execute) {
                 button.execute(undoManager);
             }
-        };
+        }
 
         function setupButton(button, isEnabled) {
 
@@ -2775,7 +2775,7 @@ else
                 setupButton(buttons.undo, undoManager.canUndo());
                 setupButton(buttons.redo, undoManager.canRedo());
             }
-        };
+        }
 
         this.setUndoRedoButtonStates = setUndoRedoButtonStates;
 

@@ -387,7 +387,7 @@
           }
         });
         self.onsync = true;
-      };    
+      }    
     
       self.synclist[name] = fn;
       requestSync();
@@ -568,7 +568,7 @@
         dom = dom.parent();
       }
       return false;
-    };
+    }
     
 //inspired by http://forum.jquery.com/topic/width-includes-border-width-when-set-to-thin-medium-thick-in-ie
     var _convertBorderWidth = {"thin":1,"medium":3,"thick":5};
@@ -582,7 +582,7 @@
         return (brd) ? px : 0; 
       }
       return px;
-    };
+    }
     
     this.getOffset = function() {
       if (self.isfixed) return {top:parseFloat(self.win.css('top')),left:parseFloat(self.win.css('left'))};
@@ -1521,7 +1521,7 @@
 							if (!self.rail.drag) self.hideCursor();
             });
             
-          };
+          }
           
         }  // !ie9mobile
         
@@ -1672,7 +1672,7 @@
           try {
             var doc = 'contentDocument' in this ? this.contentDocument : this.contentWindow.document;
             var a = doc.domain;            
-          } catch(e){self.iframexd = true;doc=false};
+          } catch(e){self.iframexd = true;doc=false}
           
           if (self.iframexd) {
             if ("console" in window) console.log('NiceScroll error: policy restriced iframe');
@@ -1736,7 +1736,7 @@
             if (self.opt.dblclickzoom) self.bind(doc,'dblclick',self.doZoom);
             if (self.ongesturezoom) self.bind(doc,"gestureend",self.ongesturezoom);             
           }
-        };
+        }
         
         if (this.doc[0].readyState&&this.doc[0].readyState=="complete"){
           setTimeout(function(){oniframeload.call(self.doc[0],false)},500);
@@ -1973,7 +1973,7 @@
 
         return fn.call(dom,event);      
       },bubble);
-    };     
+    }     
    
     this._bind = function(el,name,fn,bubble) {  // primitive bind
       self.events.push({e:el,n:name,f:fn,b:bubble,q:false});
@@ -2263,7 +2263,7 @@
       e.stopImmediatePropagation();
       return e.preventDefault();
 //      return self.cancelEvent(e);
-    };
+    }
     
     this.onmousewheel = function(e) {          
       if (self.locked) {
@@ -2644,7 +2644,7 @@
           } else {
             self.timer = setAnimationFrame(scrolling)||1;
           }
-        };
+        }
         self.cancelAnimationFrame=false;
         self.timer = 1;
 
@@ -3121,7 +3121,7 @@
           this[this.length]=nice;
           this.length++;
         }
-      };
+      }
     }
     
     return this;
@@ -3129,7 +3129,7 @@
   
   function mplex(el,lst,fn) {
     for(var a=0;a<lst.length;a++) fn(el,lst[a]);
-  };  
+  }  
   mplex(
     NiceScrollArray.prototype,
     ['show','hide','toggle','onResize','resize','remove','stop','doScrollPos'],

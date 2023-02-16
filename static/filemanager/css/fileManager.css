@@ -15,7 +15,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3939ad', endColorstr='#0daeff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .navbar-brand {
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem;
 }
 #mainRow{
     margin: 1%;

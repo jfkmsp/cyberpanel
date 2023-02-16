@@ -59,7 +59,6 @@
 }
 .c100 > span {
   position: absolute;
-  width: 100%;
   z-index: 1;
   left: 0;
   top: 0;
@@ -207,7 +206,7 @@
 .dark-area {
 	background-color: #666;
 	padding: 40px;
-	margin: 0 -40px 20px -40px;
+	margin: 0 -40px 20px;
 	clear: both;
 }
 

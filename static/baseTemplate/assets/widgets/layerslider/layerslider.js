@@ -4842,14 +4842,14 @@ function lsShowNotice(lsobj,issue,ver){
 
         for (var i = properties.length - 1; i >= 0; i--){
             s3d1 = s3d1 ? s3d1 : testEl[0].style[properties[i]] != undefined;
-        };
+        }
 
         // preserve 3D test
 
         for (var i = transform.length - 1; i >= 0; i--){
             testEl.css( 'transform-style', 'preserve-3d' );
             s3d2 = s3d2 ? s3d2 : testEl[0].style[transform[i]] == 'preserve-3d';
-        };
+        }
 
         // If browser has perspective capability and it is webkit, we must check it with this solution because Chrome can give false positive result if GPU acceleration is disabled
 
