@@ -142,7 +142,7 @@ app.controller('firewallController', function ($scope, $http) {
 
         }
 
-    };
+    }
 
     $scope.deleteRule = function (id, proto, port, ruleIP) {
 
@@ -501,7 +501,7 @@ app.controller('firewallController', function ($scope, $http) {
 
         }
 
-    };
+    }
 
 
 });
