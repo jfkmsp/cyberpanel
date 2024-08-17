@@ -121,7 +121,7 @@ app.controller('backupWebsiteControl', function ($scope, $http, $timeout) {
         function cantLoadInitialDatas(response) {
         }
 
-    };
+    }
 
     $scope.destinationSelection = function () {
         $scope.backupButton = false;
@@ -160,7 +160,7 @@ app.controller('backupWebsiteControl', function ($scope, $http, $timeout) {
         function cantLoadInitialDatas(response) {
         }
 
-    };
+    }
 
     $scope.createBackup = function () {
 
@@ -324,7 +324,7 @@ app.controller('restoreWebsiteControl', function ($scope, $http, $timeout) {
 
         }
 
-    };
+    }
 
 
     $scope.restoreBackup = function () {
@@ -418,7 +418,7 @@ app.controller('restoreWebsiteControl', function ($scope, $http, $timeout) {
         }
 
 
-    };
+    }
 
 
 });
@@ -753,7 +753,7 @@ app.controller('remoteBackupControl', function ($scope, $http, $timeout) {
             $scope.accountsFetched = true;
             $scope.notificationsBox = false;
         }
-    };
+    }
 
     function remoteBackupRestore() {
         url = "/backup/remoteBackupRestore";
@@ -790,7 +790,7 @@ app.controller('remoteBackupControl', function ($scope, $http, $timeout) {
 
         ///////////////
 
-    };
+    }
 
     function localRestoreStatus(password) {
 
@@ -850,7 +850,7 @@ app.controller('remoteBackupControl', function ($scope, $http, $timeout) {
             $scope.accountsFetched = true;
             $scope.notificationsBox = false;
         }
-    };
+    }
 
 
     function restoreAccounts() {
@@ -895,7 +895,7 @@ app.controller('remoteBackupControl', function ($scope, $http, $timeout) {
             $scope.accountsFetched = true;
             $scope.notificationsBox = false;
         }
-    };
+    }
 
     $scope.cancelRemoteBackup = function () {
 
@@ -2422,7 +2422,7 @@ app.controller('OneClickrestoreWebsiteControl', function ($scope, $http, $timeou
 
         }
 
-    };
+    }
 
 
     $scope.restoreBackup = function () {
@@ -2515,7 +2515,7 @@ app.controller('OneClickrestoreWebsiteControl', function ($scope, $http, $timeou
         }
 
 
-    };
+    }
 
     $scope.FetchOCSites = function () {
         $scope.restoreLoading = false;
